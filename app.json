@@ -22,12 +22,14 @@
     "SECRET_KEY": {
       "description": "Django Secret Key.",
       "generator": "secret"
+    },
+    "DATABASE_URL": {
+      "reqired": true
+    },
+    "REDIS_URL": {
+      "reqired": true
     }
   },
   "image": "glitchtip/glitchtip",
-  "stack": "container",
-  "addons": [
-    "heroku-postgresql",
-    "heroku-redis"
-  ]
+  "stack": "container"
 }
