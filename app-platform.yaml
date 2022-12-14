@@ -6,11 +6,9 @@ envs:
 - key: DEFAULT_FROM_EMAIL
 - key: GLITCHTIP_DOMAIN
 - key: DATABASE_URL
-  scope: RUN_TIME
-  value: ${glitchtip-db.DATABASE_URL}
+  value: "Enter DATABASE_URL"
 - key: REDIS_URL
-  scope: RUN_TIME
-  value: ${glitchtip-redis.REDIS_URL}
+  value: "Enter REDIS_URL"
 name: glitchtip
 services:
 - dockerfile_path: Dockerfile
